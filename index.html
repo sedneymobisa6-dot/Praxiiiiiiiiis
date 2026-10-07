@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Praxis — Compliance Series</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg: #FFFFFF;
+    --ink: #0A0A0A;
+    --ink-soft: #5A5A5A;
+    --ink-mute: #8A8A8A;
+    --accent: #0A3D62;
+    --line: #E0E0E0;
+  }
+
+  body {
+    background: #D8D8D8;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .slide {
+    width: 1080px;
+    height: 1350px;
+    background: var(--bg);
+    color: var(--ink);
+    position: relative;
+    overflow: hidden;
+    padding: 100px 100px 80px 100px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.15);
+  }
+
+  .kicker {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--accent);
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--accent);
+    display: inline-block;
+    align-self: flex-start;
+  }
+
+  .headline {
+    font-size: 72px;
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    line-height: 1.1;
+    color: var(--ink);
+    margin-top: 70px;
+    max-width: 900px;
+  }
+
+  .divider {
+    width: 60px;
+    height: 3px;
+    background: var(--ink);
+    margin: 50px 0;
+  }
+
+  .subline {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.45;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+    max-width: 880px;
+  }
+
+  .list {
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 1.55;
+    color: var(--ink);
+    max-width: 920px;
+  }
+
+  .list .row {
+    display: flex;
+    gap: 24px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--line);
+    align-items: flex-start;
+  }
+
+  .list .row:last-child { border-bottom: none; }
+
+  .list .num {
+    font-weight: 700;
+    color: var(--accent);
+    flex-shrink: 0;
+    width: 60px;
+    font-size: 22px;
+  }
+
+  .list .txt { flex: 1; }
+
+  .list .txt strong {
+    display: block;
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 4px;
+  }
+
+  .list .txt span {
+    font-size: 22px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+
+  .stat-block {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .stat {
+    display: flex;
+    align-items: baseline;
+    gap: 24px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 18px;
+  }
+
+  .stat:last-child { border-bottom: none; }
+
+  .stat .figure {
+    font-size: 56px;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    color: var(--accent);
+    line-height: 1;
+    min-width: 220px;
+  }
+
+  .stat .desc {
+    font-size: 22px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+
+  .spacer { flex: 1; }
+
+  .source {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    line-height: 1.55;
+    color: var(--ink-mute);
+    max-width: 820px;
+  }
+
+  .foot {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 18px;
+    letter-spacing: 0.18em;
+    color: var(--ink-mute);
+    font-weight: 500;
+    margin-top: 34px;
+  }
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1 — REGISTRATION -->
+<div class="slide">
+  <div class="kicker">Registration</div>
+
+  <div class="banner" style="margin-top: 46px; border: 1px solid var(--line); border-left: 4px solid var(--accent); padding: 26px 32px; background: #FAFAFA;">
+    <div style="font-size: 14px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px;">Exemption</div>
+    <div style="font-size: 22px; font-weight: 500; line-height: 1.45; color: var(--ink);">Both conditions must apply: annual turnover below KES 5 million, and fewer than 10 employees.</div>
+  </div>
+
+  <div class="headline">You must register<br/>before you process<br/>personal data.</div>
+
+  <div class="divider"></div>
+
+  <div class="subline">The exemption does not apply if you process data for any listed purpose.</div>
+
+  <div style="font-size: 22px; font-weight: 400; line-height: 1.65; color: var(--ink-soft); margin-top: 30px; max-width: 880px;">
+    Education. Healthcare. Financial services. Hospitality. Property. Transport. Telecommunications. Direct marketing. Gaming. Security and CCTV. Genetic data. Political canvassing.
+  </div>
+
+  <div class="spacer"></div>
+
+  <div class="source">Apply on the ODPC portal using Form DPR 1.<br/>Certificates are valid for 24 months.</div>
+
+  <div class="foot">1 / 7</div>
+</div>
+
+<!-- SLIDE 2 — ENFORCEMENT -->
+<div class="slide">
+  <div class="kicker">Enforcement</div>
+
+  <div class="headline" style="margin-top: 80px;">The maximum<br/>penalty has<br/>already been applied.</div>
+
+  <div class="divider"></div>
+
+  <div class="subline">KES 5,000,000. OPPO Kenya. 2022.</div>
+
+  <div class="list">
+    <div class="row"><div class="num">01</div><div class="txt">A customer photo posted without consent.</div></div>
+    <div class="row"><div class="num">02</div><div class="txt">No data protection policy in place.</div></div>
+    <div class="row"><div class="num">03</div><div class="txt">No internal complaints mechanism.</div></div>
+    <div class="row"><div class="num">04</div><div class="txt">Failure to cooperate with the ODPC investigation.</div></div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <div class="source">Office of the Data Protection Commissioner.<br/>Penalty Notice, December 2022.</div>
+
+  <div class="foot">2 / 7</div>
+</div>
+
+<!-- SLIDE 3 — PROCESS -->
+<div class="slide">
+  <div class="kicker">Process</div>
+
+  <div class="headline" style="margin-top: 80px;">Registration<br/>in six steps.</div>
+
+  <div class="divider"></div>
+
+  <div class="list" style="margin-top: 0;">
+    <div class="row"><div class="num">01</div><div class="txt">Confirm whether you are a controller, a processor, or both.</div></div>
+    <div class="row"><div class="num">02</div><div class="txt">Check the exemption threshold and the listed purposes.</div></div>
+    <div class="row"><div class="num">03</div><div class="txt">Prepare your establishment documents.</div></div>
+    <div class="row"><div class="num">04</div><div class="txt">Complete Form DPR 1 on the ODPC portal.</div></div>
+    <div class="row"><div class="num">05</div><div class="txt">Pay the prescribed fee for your category.</div></div>
+    <div class="row"><div class="num">06</div><div class="txt">Receive your certificate within 14 days.</div></div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <div class="source">Registration is submitted electronically.<br/>Certificates are valid for 24 months.</div>
+
+  <div class="foot">3 / 7</div>
+</div>
+
+<!-- SLIDE 4 — THE CLOCK STARTS (FIXED) -->
+<div class="slide">
+  <div class="kicker">Your Obligations</div>
+
+  <div class="headline" style="margin-top: 70px;">The clock starts<br/>the moment you<br/>receive a request.</div>
+
+  <div class="divider"></div>
+
+  <div class="list" style="margin-top: 0;">
+    <div class="row">
+      <div class="num">01</div>
+      <div class="txt"><strong>To be informed.</strong> You must tell them what you are doing with their data.</div>
+    </div>
+    <div class="row">
+      <div class="num">02</div>
+      <div class="txt"><strong>To access.</strong> You must provide their data within 7 days.</div>
+    </div>
+    <div class="row">
+      <div class="num">03</div>
+      <div class="txt"><strong>To object.</strong> You must stop processing, or explain why you cannot, within 14 days.</div>
+    </div>
+    <div class="row">
+      <div class="num">04</div>
+      <div class="txt"><strong>To rectification.</strong> You must correct inaccurate data within 14 days.</div>
+    </div>
+    <div class="row">
+      <div class="num">05</div>
+      <div class="txt"><strong>To erasure.</strong> You must delete data you no longer lawfully hold within 14 days.</div>
+    </div>
+    <div class="row">
+      <div class="num">06</div>
+      <div class="txt"><strong>To data portability.</strong> You must transmit their data in a machine readable format within 30 days.</div>
+    </div>
+    <div class="row">
+      <div class="num">07</div>
+      <div class="txt"><strong>Not to be subject to automated decision making.</strong> You must notify them and allow human review.</div>
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <div class="source">Data Protection Act, 2019 and the Data Protection<br/>(General) Regulations, 2021.</div>
+
+  <div class="foot">4 / 7</div>
+</div>
+
+<!-- SLIDE 5 — THE PENALTY IS NOT THE WORST PART -->
+<div class="slide">
+  <div class="kicker">Enforcement</div>
+
+  <div class="headline" style="margin-top: 80px;">The penalty<br/>is not the<br/>worst part.</div>
+
+  <div class="divider"></div>
+
+  <div class="list" style="margin-top: 0;">
+    <div class="row"><div class="num">2022</div><div class="txt">OPPO Kenya fined KES 5,000,000 for using a customer photo without consent.</div></div>
+    <div class="row"><div class="num">2023</div><div class="txt">Mulla Pride fined KES 2,975,000 for contacting a debtor's entire phone contact list.</div></div>
+    <div class="row"><div class="num">2025</div><div class="txt">Whitepath fined KES 5,000,000 after 150 customers complained about unsolicited messages.</div></div>
+    <div class="row"><div class="num">2026</div><div class="txt">Match Ventures fined KES 500,000 for using a person's image in advertising without consent.</div></div>
+  </div>
+
+  <div style="margin-top: 40px; font-size: 28px; font-weight: 600; line-height: 1.4; color: var(--ink);">
+    The pattern is not the fine.<br/>The pattern is the customer complaint that started it.
+  </div>
+
+  <div class="spacer"></div>
+
+  <div class="source">Office of the Data Protection Commissioner.<br/>Published determinations, 2022 to 2026.</div>
+
+  <div class="foot">5 / 7</div>
+</div>
+
+<!-- SLIDE 6 — THE NUMBERS -->
+<div class="slide">
+  <div class="kicker">The Reality</div>
+
+  <div class="headline" style="margin-top: 80px;">This is not<br/>a future risk.<br/>It is happening now.</div>
+
+  <div class="divider"></div>
+
+  <div class="stat-block">
+    <div class="stat">
+      <div class="figure">9,000+</div>
+      <div class="desc">Complaints handled by the ODPC.</div>
+    </div>
+    <div class="stat">
+      <div class="figure">184</div>
+      <div class="desc">Compensation orders issued in a single enforcement wave in January 2026.</div>
+    </div>
+    <div class="stat">
+      <div class="figure">KES 30M+</div>
+      <div class="desc">Paid out by organisations to data subjects in compensation in one year.</div>
+    </div>
+    <div class="stat">
+      <div class="figure">KES 2.2M</div>
+      <div class="desc">The average financial exposure per verified data protection liability.</div>
+    </div>
+    <div class="stat">
+      <div class="figure">93.6%</div>
+      <div class="desc">Of organisations know about the Data Protection Act.</div>
+    </div>
+    <div class="stat">
+      <div class="figure">32%</div>
+      <div class="desc">Have actually implemented the core requirements.</div>
+    </div>
+  </div>
+
+  <div style="margin-top: 40px; font-size: 28px; font-weight: 600; line-height: 1.4; color: var(--ink);">
+    The gap between awareness and action is where the fines live.
+  </div>
+
+  <div class="spacer"></div>
+
+  <div class="source">ODPC enforcement data and EY Kenya compliance survey, 2025 to 2026.</div>
+
+  <div class="foot">6 / 7</div>
+</div>
+
+<!-- SLIDE 7 — ROLES -->
+<div class="slide">
+  <div class="kicker">Roles</div>
+
+  <div class="headline" style="margin-top: 80px;">Know who you<br/>are under<br/>the law.</div>
+
+  <div class="divider"></div>
+
+  <div class="list" style="margin-top: 0;">
+    <div class="row">
+      <div class="num">A</div>
+      <div class="txt"><strong>Controller.</strong> Determines why and how personal data is processed. Carries primary legal responsibility.</div>
+    </div>
+    <div class="row">
+      <div class="num">B</div>
+      <div class="txt"><strong>Processor.</strong> Processes data on behalf of the controller. Liable only if acting outside instructions.</div>
+    </div>
+    <div class="row">
+      <div class="num">C</div>
+      <div class="txt"><strong>Data subject.</strong> The person whose data is processed. Holds the rights the law exists to protect.</div>
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <div class="source">Section 2 of the Data Protection Act, 2019.</div>
+
+  <div class="foot">7 / 7</div>
+</div>
+
+</body>
+</html>
